@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aakash Choudhary</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+      transition: all 0.3s ease;
+    }
+
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    body.dark-mode a {
+      color: #90caf9;
+    }
+
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background: #e0e0e0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+      font-size: 14px;
+    }
+
+    body.dark-mode #theme-toggle {
+      background-color: #333;
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      padding-top: 60px;
+    }
+
+    .hero-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero-image {
+        text-align: center;
+      }
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    h2 {
+      border-left: 4px solid #0077cc;
+      padding-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form input[type="submit"] {
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+
+    .social-icons i {
+      margin-right: 10px;
+    }
+
+    /* SVG Decorative Wave */
+    .wave {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Hello, I’m Aakash Choudhary</h1>
+      <p>This is my personal website!</p>
+    </div>
+    <div class="hero-image">
+      <img src="aakash.jpg" alt="Aakash Choudhary" />
+    </div>
+  </div>
+
+  <!-- Decorative Wave -->
+  <div class="wave">
+    <svg viewBox="0 0 1440 320" style="display: block;" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#cceeff" fill-opacity="1"
+        d="M0,160L40,138.7C80,117,160,75,240,85.3C320,96,400,160,480,181.3C560,203,640,181,720,186.7C800,192,880,224,960,234.7C1040,245,1120,235,1200,197.3C1280,160,1360,96,1400,64L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+
+  <!-- About Me -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm Aakash Choudhary, a passionate BCA student from Meerut. I love coding, learning about AI, and building tech that helps people.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>2024 – Present:</strong> BCA at Meerut Institute of Technology</li>
+      <li><strong>2023 – 2024:</strong> 12th (Commerce) from CBSE Board</li>
+      <li><strong>2021 – 2022:</strong> 10th from CBSE Board</li>
+    </ul>
+  </section>
+
+  <!-- Background -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      I belong to a hardworking and humble family from Meerut. Growing up, I was always curious about technology and computers. 
+      My background has shaped my interest in coding and solving real-life problems through technology.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 Programming: C, Python</li>
+      <li>🌐 Web Development: HTML, CSS, JavaScript</li>
+      <li>🤖 AI/ML Concepts (Basics)</li>
+      <li>📱 Android App Development (Java)</li>
+      <li>🛠 Tools: VS Code, Git, Canva</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <!-- Social Links -->
+  <section>
+    <h2>Connect With Me</h2>
+    <p class="social-icons">
+      <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/aakashchoudhary" target="_blank">LinkedIn</a><br/>
+      <i class="fab fa-github"></i> <a href="https://github.com/0110aakashchoudhary" target="_blank">GitHub</a><br/>
+      <i class="fas fa-envelope"></i> <a href="mailto:aakash@example.com">Email</a>
+    </p>
+  </section>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleBtn.textContent = "☀ Light Mode";
+      } else {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      }
+    });
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+      toggleBtn.textContent = isDark ? "☀ Light Mode" : "🌙 Dark Mode";
+    });
+  </script>
+</body>
+</html>

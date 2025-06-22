@@ -1,0 +1,87 @@
+/* -------- Base Styling -------- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+  color: #2c3e50;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Headings */
+h1, h2 {
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+}
+
+/* Image Styling */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* List Styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #005199;
+}
+
+/* Form Styling */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #218838;
+  cursor: pointer;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
